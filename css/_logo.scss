@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 3px solid black;
 }
@@ -22,6 +22,18 @@
 
 
 .logo_svg {
-    width: 130px;
-    height: 130px;
+    width: 90px;
+    height: 90px;
+}
+
+@media (min-width: $desktop) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo_svg {
+        width: 100px;
+        height: 100px;
+    }
 }
