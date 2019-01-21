@@ -3,6 +3,7 @@
     padding: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     font-size: 28px;
     color: #fff;
@@ -17,6 +18,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
+    z-index: 10;
 }
 
 .nav--hidden {
@@ -31,6 +33,21 @@
 
 .nav__header {
     text-align: center;
+    margin: 0;
+}
+
+.nav__phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin: 15px;
+}
+
+.nav__phoneNumber {
+    padding: 0px 15px;
+    margin: 4px 0px;
 }
 
 .nav__circle {
@@ -64,17 +81,18 @@
 .nav__iconsContainer {
     display: flex;
     justify-content: space-around;
+    width: 80%;
 }
 
 
 @media (min-width: $desktop) {
     .nav {
-        border-radius: 30px;
         width: 100%;
         height: 250px;
         left: 0;
         right: 0;
         margin: auto;
+        box-shadow: 0px 10px 10px rgba(0,0,0,.4);
     }
 
     .nav--hidden {
@@ -87,7 +105,20 @@
     }
 
     .nav__header {
-        font-size: 48px;
+        font-size: 40px;
+    }
+
+    .nav__phones {
+        flex-direction: row;
+        font-size: 36px;
+    }
+
+    .nav__phoneNumber {
+        pointer-events: none;
+        cursor: auto;
+        &:nth-child(2) {
+            border-left: 2px solid #fff;
+        }
     }
 
     .nav__circle {

@@ -40,3 +40,20 @@ a {
     flex-direction: column;
     margin-bottom: 10vh;
 }
+
+@keyframes slideHorizontal {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideVertical {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@mixin slideIn($beginingPosition, $endingPosition) {
+    transform: $beginingPosition;
+    animation: $endingPosition 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
+}

@@ -3,12 +3,14 @@
     margin: 15px;
     text-transform: uppercase;
     line-height: 60px;
+    @include slideIn(translateX(calc(-50vw - 100%)), slideHorizontal);
 }
 
 .header__slogan {
     margin: 0px;
     margin-bottom: 30px;
     font-size: 28px;
+    @include slideIn(translateX(calc(50vw + 100%)), slideHorizontal);
 }
 
 @media (min-width: $desktop) {
