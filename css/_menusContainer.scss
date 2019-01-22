@@ -39,6 +39,12 @@
 }
 
 
+@media (min-height: $mobile-big) {
+    .menusContainer {
+        margin-top: 100px;
+    }
+}
+
 
 @media (min-width: $desktop) {
     .menusContainer {

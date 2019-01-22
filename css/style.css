@@ -66,8 +66,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 3px solid black;
 }
@@ -81,14 +81,19 @@ a {
   width: 80%;
   height: 80%;
   border: 1.5px solid black;
-  font-size: 64px;
+  font-size: 54px;
 }
 
 .logo_svg {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
 }
 
+@media (min-height: 599px) {
+  .logo__container {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   .logo__container {
     display: block;
@@ -197,6 +202,11 @@ a {
   animation: slideHorizontal 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
 }
 
+@media (min-height: 599px) {
+  .menusContainer {
+    margin-top: 100px;
+  }
+}
 @media (min-width: 768px) {
   .menusContainer {
     width: 650px;
@@ -248,6 +258,7 @@ a {
   margin-right: 15px;
   transform: translateX(calc(-50vw - 100%));
   animation: slideHorizontal 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
+  display: none;
 }
 
 .menuToggler__bar {

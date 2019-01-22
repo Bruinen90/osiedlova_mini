@@ -6,8 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 3px solid black;
 }
@@ -21,13 +21,19 @@
     width: 80%;
     height: 80%;
     border: 1.5px solid black;
-    font-size: 64px;
+    font-size: 54px;
 }
 
 
 .logo_svg {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
+}
+
+@media (min-height: $mobile-big) {
+    .logo__container {
+        display: block;
+    }
 }
 
 @media (min-width: $desktop) {
