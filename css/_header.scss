@@ -2,6 +2,7 @@
     font-size: 70px;
     margin: 15px;
     text-transform: uppercase;
+    letter-spacing: 5px;
     line-height: 60px;
     @include slideIn(translateX(calc(-50vw - 100%)), slideHorizontal);
 }
@@ -15,11 +16,25 @@
 
 @media (min-width: $desktop) {
     .header__mainHeader {
+        margin: 20px;
+        font-size: 80px;
+        letter-spacing: normal;
+    }
+
+    .header__slogan {
+        font-size: 32px;
+        margin: 0;
+    }
+}
+
+@media (min-width: $desktop-big) {
+    .header__mainHeader {
         margin: 30px;
         font-size: 90px;
     }
 
     .header__slogan {
         font-size: 36px;
+        margin-bottom: 30px;
     }
 }

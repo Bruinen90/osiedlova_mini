@@ -39,7 +39,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10vh;
+    margin-top: 20vh;
 }
 
 @keyframes slideHorizontal {
@@ -57,4 +57,11 @@ a {
 @mixin slideIn($beginingPosition, $endingPosition) {
     transform: $beginingPosition;
     animation: $endingPosition 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
+}
+
+@media (min-width: $desktop) {
+    .centerContainer {
+        margin: 0;
+        margin-bottom: 10vh;
+    }
 }

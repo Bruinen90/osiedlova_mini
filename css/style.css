@@ -38,7 +38,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10vh;
+  margin-top: 20vh;
 }
 
 @keyframes slideHorizontal {
@@ -51,6 +51,16 @@ a {
     transform: translateY(0);
   }
 }
+@media (min-width: 768px) {
+  .centerContainer {
+    margin: 0;
+    margin-bottom: 10vh;
+  }
+}
+.logo__container {
+  display: none;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -79,6 +89,21 @@ a {
 }
 
 @media (min-width: 768px) {
+  .logo__container {
+    display: block;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo_svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width: 1441px) {
   .logo {
     width: 100px;
     height: 100px;
@@ -93,6 +118,7 @@ a {
   font-size: 70px;
   margin: 15px;
   text-transform: uppercase;
+  letter-spacing: 5px;
   line-height: 60px;
   transform: translateX(calc(-50vw - 100%));
   animation: slideHorizontal 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
@@ -108,12 +134,25 @@ a {
 
 @media (min-width: 768px) {
   .header__mainHeader {
+    margin: 20px;
+    font-size: 80px;
+    letter-spacing: normal;
+  }
+
+  .header__slogan {
+    font-size: 32px;
+    margin: 0;
+  }
+}
+@media (min-width: 1441px) {
+  .header__mainHeader {
     margin: 30px;
     font-size: 90px;
   }
 
   .header__slogan {
     font-size: 36px;
+    margin-bottom: 30px;
   }
 }
 .menusContainer {
@@ -121,6 +160,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .menusContainer__container {
@@ -157,12 +197,13 @@ a {
 
 @media (min-width: 768px) {
   .menusContainer {
-    width: 750px;
-    height: 250px;
+    width: 650px;
+    height: 200px;
     justify-content: space-between;
     flex-direction: row;
     position: relative;
     align-items: center;
+    margin: 0;
   }
 
   .menusContainer__container {
@@ -336,7 +377,7 @@ a {
 @media (min-width: 768px) {
   .nav {
     width: calc(100% - 60px);
-    height: 250px;
+    height: 200px;
     left: 0;
     right: 0;
     margin: auto;

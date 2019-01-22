@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .menusContainer__container {
@@ -40,12 +41,13 @@
 
 @media (min-width: $desktop) {
     .menusContainer {
-        width: 750px;
-        height: 250px;
+        width: 650px;
+        height: 200px;
         justify-content: space-between;
         flex-direction: row;
         position: relative;
         align-items: center;
+        margin: 0;
     }
 
     .menusContainer__container {
