@@ -38,7 +38,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 @keyframes slideHorizontal {
@@ -115,8 +115,8 @@ a {
   }
 }
 .header__mainHeader {
-  font-size: 60px;
-  margin: 5px;
+  font-size: 50px;
+  margin: 3px;
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: 60px;
@@ -126,8 +126,8 @@ a {
 
 .header__slogan {
   margin: 0px;
-  margin-bottom: 30px;
-  font-size: 28px;
+  margin-bottom: 25px;
+  font-size: 24px;
   transform: translateX(calc(50vw + 100%));
   animation: slideHorizontal 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
 }
@@ -191,6 +191,7 @@ a {
   width: 180px;
   height: 50px;
   text-align: center;
+  cursor: pointer;
   transform: translateX(calc(50vw + 100%));
   animation: slideHorizontal 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
 }

@@ -24,7 +24,7 @@
                             <div class="menuToggler__bar menuToggler__bar2"></div>
                             <div class="menuToggler__bar menuToggler__bar3"></div>
                         </div>
-                        <div class="menusContainer__location">Kraków</div>
+                        <div class="menusContainer__location" onClick='toggleMenu("krakow_nav")'>Kraków</div>
                     </div>
 
                     <div class="nav nav--hidden" id="krakow_nav">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="menusContainer__container" id="sanok">
                     <div class="menusContainer__row">
-                        <div class="menusContainer__location">Sanok</div>
+                        <div class="menusContainer__location" onClick='toggleMenu("sanok_nav")'>Sanok</div>
                         <div class="menuToggler menuToggler--right" onClick='toggleMenu("sanok_nav")'>
                             <div class="menuToggler__bar menuToggler__bar1"></div>
                             <div class="menuToggler__bar menuToggler__bar2"></div>
@@ -127,5 +127,11 @@
         <script type="text/javascript" src="js/menuToggler.js"></script>
         <script type="text/javascript" src="js/icons.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
+        <script type="text/javascript">
+        document.body.addEventListener("touchmove", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            }, false);
+        </script>
     </body>
 </html>
