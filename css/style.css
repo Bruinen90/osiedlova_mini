@@ -38,7 +38,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 @keyframes slideHorizontal {
@@ -115,10 +115,10 @@ a {
   }
 }
 .header__mainHeader {
-  font-size: 70px;
+  font-size: 60px;
   margin: 15px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   line-height: 60px;
   transform: translateX(calc(-50vw - 100%));
   animation: slideHorizontal 1s 1s cubic-bezier(0.42, 0, 0.69, 1.21) forwards;
@@ -160,7 +160,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .menusContainer__container {

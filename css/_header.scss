@@ -1,8 +1,8 @@
 .header__mainHeader {
-    font-size: 70px;
+    font-size: 60px;
     margin: 15px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     line-height: 60px;
     @include slideIn(translateX(calc(-50vw - 100%)), slideHorizontal);
 }
